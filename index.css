@@ -16,6 +16,7 @@ html, body {
 /*header*/
 
 .header {
+
     background-image: -webkit-linear-gradient(#FFD194, #BC1324);
     height: 3rem;
 }
@@ -65,12 +66,12 @@ h1, h2{
     font-size:1rem;
   }}
 
-@media only screen and (min-width:480px) and (max-width:480px) and (orientation:landscape){
-    .header, ul{
+@media only screen and (min-width:480px) and (orientation:landscape){
+    .header{
          font-size:1rem;
-         float: left;
          position: relative;
          display: inline-block;
+         text-align: center;
   }
 }
 
