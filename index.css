@@ -1,10 +1,10 @@
 /*scaling*/
 
 
-html, body {
-    margin: auto;
-    font-size: 16px;
-    color: GhostWhite;
+html,
+body {
+  margin: auto;
+  padding: 0;
 }
 
 .container {
@@ -16,14 +16,14 @@ html, body {
 /*header*/
 
 .header {
-
     background-image: -webkit-linear-gradient(#FFD194, #BC1324);
     height: 3rem;
+
 }
 
 ul {
     margin: 0 auto;
-
+     position: fixed;
 }
 
 li {
@@ -51,12 +51,14 @@ a{
 
 h1, h2{
     margin: 0 auto;
+    color: #fff;
 }
 
 .hline img{
     height: 60px;
     width: 50px;
     margin-top:2.5rem;
+    position: relative;
 }
 
 /*responsive codes*/
@@ -66,17 +68,43 @@ h1, h2{
     font-size:1rem;
   }}
 
-@media only screen and (min-width:480px) and (orientation:landscape){
-    ul{
-         margin-left: 10rem;
-         font-size:1rem;
-         position: relative;
-         display: inline-block;
-         text-align: center;
+@media only screen and (max-width:480px){
+  .header
+  {
+    font-size:1rem;
+    display: block;
+  }
+  ul
+  {
+    display: block;
+
   }
 }
 
-@-ms-viewport{
-  width: device-width;
+
+@media only screen and (min-width:480px) and (max-width:1024px), (orientation:portrait){
+ .hline
+  {
+    font-size:20px;
+    text-align: center;
+  }
+  img{
+    display: inline-block;
+    position: relative;
+    align-content: center;
+  }
 }
+
+@media only screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape){
+ .hline
+  {
+    font-size:20px;
+    text-align: center;
+  }
+  img{
+    display: inline-block;
+    position: relative;
+  }
+}
+
 
