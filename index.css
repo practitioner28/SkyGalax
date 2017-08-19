@@ -68,20 +68,34 @@ h1, h2{
     font-size:1rem;
   }}
 
-@media only screen and (max-width:480px){
-  .header
-  {
-    font-size:1rem;
-    display: block;
-  }
-  ul
-  {
-    display: block;
 
+/*header*/
+@media only screen and (min-width:480px) and (max-width:1024px), (orientation:portrait){
+ .header
+  {
+    height: 6rem;
+  }
+  li{
+    display: inline-block;
+    position: relative;
+    align-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape){
+ .header
+  {
+
+  }
+  li{
+    display: inline-block;
+    position: relative;
+     align-content: center;
   }
 }
 
 
+ /*hline*/
 @media only screen and (min-width:480px) and (max-width:1024px), (orientation:portrait){
  .hline
   {
