@@ -1,3 +1,73 @@
+/*scaling*/
+*{
+    border:2px solid rgba(0,0,0,0.3);
+}
+
+html, body {
+    margin: auto;
+    font-size: 16px;
+    color: GhostWhite;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+
+.header {
+    background-image: -webkit-linear-gradient(#FFD194, #BC1324);
+    height: 3rem;
+}
+
+ul {
+    margin: 0 auto;
+
+}
+
+li {
+     list-style: none;
+     font-size: 1.1rem;
+     float: left;
+     margin: 16px;
+}
+
+a{
+    text-decoration-line: none;
+     color: #42f4e2;
+}
+
+/*hline*/
+.hline{
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50rem;
+    text-align: center;
+    position: relative;
+
+}
+
+h1, h2{
+    margin: 0 auto;
+}
+
+.hline img{
+    height: 60px;
+    width: 50px;
+    margin-top:2.5rem;
+}
+
+/*responsive codes*/
+
+@media only screen and (max-width:480px) {
+  body{
+    font-size:1rem;
+  }}
+
 @-ms-viewport{
   width: device-width;
 }
