@@ -85,12 +85,12 @@ h1, h2{
 @media only screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape){
  .header
   {
-
+    left: -6rem;
   }
   li{
     display: inline-block;
     position: relative;
-     align-content: center;
+    align-content: center;
   }
 }
 
