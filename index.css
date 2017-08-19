@@ -1,7 +1,5 @@
 /*scaling*/
-*{
-    border:2px solid rgba(0,0,0,0.3);
-}
+
 
 html, body {
     margin: auto;
@@ -68,6 +66,14 @@ h1, h2{
     font-size:1rem;
   }}
 
+@media only screen and (max-width: 480px) {
+    .header{
+
+    }
+}
+
+
 @-ms-viewport{
   width: device-width;
 }
+
